@@ -1,0 +1,64 @@
+.recipeCard {
+  width: 400px;
+  padding-top: 20px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.recipeCardPicture {
+  border-radius: 15px 15px 0px 0px;
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.recipeCardInfoBox {
+  background-color: white;
+  border-radius: 0px 0px 15px 15px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3px;
+}
+.recipeCardInfoBox .mealType {
+  color: grey;
+}
+.recipeCardInfoBox > h2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.recipeCardInfoBox .veganVegetarian {
+  background-color: rgb(237, 132, 237);
+  padding: 0px 5px 0px 5px;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 5px;
+}
+.recipeCardInfoBox .dietLabels {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.recipeCardInfoBox .dietLabels > li {
+  list-style-type: none;
+  background-color: rgb(132, 237, 146);
+  padding: 0px 5px 0px 5px;
+  margin: 0px 5px 10px 5px;
+  border-radius: 5px;
+}
+.recipeCardInfoBox .cautionList {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.recipeCardInfoBox .cautionList > li {
+  list-style-type: none;
+  font-weight: bold;
+  background-color: rgb(240, 146, 146);
+  padding: 0px 5px 0px 5px;
+  margin: 0px 5px 10px 5px;
+  border-radius: 5px;
+}/*# sourceMappingURL=RecipeCard.css.map */

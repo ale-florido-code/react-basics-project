@@ -1,0 +1,73 @@
+.recipePage {
+  width: 800px;
+  display: grid;
+  grid-template-rows: 5vw 25vw auto;
+  grid-template-columns: 100%;
+  grid-template-areas: "banner" "picture" "info";
+}
+.recipePage .recipePageBanner {
+  background-color: white;
+  width: auto;
+  height: 50px;
+  grid-area: banner;
+}
+.recipePage .recipePagePicture {
+  grid-area: picture;
+  width: 100%;
+  height: 25vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.recipePage .recipePageInfo {
+  width: 100%;
+  background-color: white;
+  grid-area: info;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.recipePage .recipePageInfo .recipePageInfoLeft {
+  width: auto;
+  height: 200px;
+}
+.recipePage .recipePageInfo .recipePageInfoRight {
+  width: auto;
+  height: auto;
+}
+.recipePage .recipePageInfo .recipePageInfoRight .healthLabelList {
+  width: 400px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 5px;
+}
+.recipePage .recipePageInfo .recipePageInfoRight .healthLabelList > li {
+  background-color: rgb(238, 171, 221);
+  padding: 0px 5px 0px 5px;
+  border-radius: 5px;
+}
+.recipePage .recipePageInfo .recipePageInfoRight .dietLabels {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 5px;
+}
+.recipePage .recipePageInfo .recipePageInfoRight .dietLabels > li {
+  list-style-type: none;
+  background-color: rgb(132, 237, 146);
+  padding: 0px 5px 0px 5px;
+  border-radius: 5px;
+}
+.recipePage .recipePageInfo .recipePageInfoRight .cautionList {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 5px;
+}
+.recipePage .recipePageInfo .recipePageInfoRight .cautionList > li {
+  list-style-type: none;
+  background-color: rgb(240, 146, 146);
+  padding: 0px 5px 0px 5px;
+  border-radius: 5px;
+}/*# sourceMappingURL=RecipePage.css.map */

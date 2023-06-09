@@ -1,0 +1,73 @@
+$recipeCardCorner: 15px;
+$highlightCorner: 5px;
+
+.recipeCard {
+  width: 400px;
+  padding-top: 20px;
+  border-radius: $recipeCardCorner;
+  text-align: center;
+}
+
+.recipeCardPicture {
+  border-radius: $recipeCardCorner $recipeCardCorner 0px 0px;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.recipeCardInfoBox {
+  background-color: white;
+  border-radius: 0px 0px $recipeCardCorner $recipeCardCorner;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3px;
+
+  .mealType {
+    color: grey;
+  }
+
+  > h2 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .veganVegetarian {
+    background-color: rgb(237, 132, 237);
+    padding: 0px 5px 0px 5px;
+    width: fit-content;
+    border-radius: $highlightCorner;
+  }
+
+  .dietLabels {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+
+    > li {
+      list-style-type: none;
+      background-color: rgb(132, 237, 146);
+      padding: 0px 5px 0px 5px;
+      margin: 0px 5px 10px 5px;
+      border-radius: $highlightCorner;
+    }
+  }
+
+  .cautionList {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    > li {
+      list-style-type: none;
+      font-weight: bold;
+      background-color: rgb(240, 146, 146);
+      padding: 0px 5px 0px 5px;
+      margin: 0px 5px 10px 5px;
+      border-radius: $highlightCorner;
+    }
+  }
+}
